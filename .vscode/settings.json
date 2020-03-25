@@ -1,0 +1,12 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontSize": 16,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/test/assets/stylesheet"
+        }
+    ]
+}
