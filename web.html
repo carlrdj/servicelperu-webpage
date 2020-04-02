@@ -62,9 +62,12 @@
         
 
     </style>
+    
     <script src="./assets/js/script.js" async></script>
+    
 </head>
 <body>
+    
      <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -82,11 +85,9 @@
                     <div class="col-lg-10 col-md-10">
                         <div class="slider_text">
                             <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
-                                Startup you can build a 
-                                website online using the
-                                Bootstrap builder.
+                                Diseño y creación de su web profesional.
                             </h3>
-                            <a class="boxed-btn3 wow fadeInLeft"  data-wow-duration="1s" data-wow-delay=".2s" href="portfolio.html">Visit Our Works</a>
+                            <a class="boxed-btn3 wow fadeInLeft"  data-wow-duration="1s" data-wow-delay=".2s" onclick="navegar('portafolio-seccion')">Ver Trabajos</a>
                         </div>
                     </div>
                 </div>
@@ -217,7 +218,7 @@
 
 
     <!-- portfolio_image_area  -->
-    <div class="portfolio_image_area py-0">
+    <div class="portfolio_image_area py-0" id="portafolio-seccion">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -771,6 +772,24 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="./assets/js/mail-script.js"></script>
 
     <script src="./assets/js/main.js"></script>
+   
+
+    <script >
+        // var url = window.location.href;
+        console.log(window.location.href);
+        console.log(window.location.hash);
+        if(window.location.hash!=undefined){
+            var str = window.location.hash;
+           if(str.substring(1, str.length)!="") navegar(str.substring(1, str.length));
+        }
+
+        function navegar(id) {
+            document.getElementById(id).scrollIntoView({
+                    behavior: 'smooth'
+            });
+        }
+        
+   </script>
 
 </body>
 </html>

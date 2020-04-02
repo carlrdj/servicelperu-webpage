@@ -9,7 +9,7 @@ header.innerHTML = `
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo-img">
                                 <a href="index.html">
-                                    <img src="http://servicelperu.com/assets/image/logo.png" alt="" style=" filter: brightness(0) invert(1); ">
+                                    <img src="./assets/img/logo.png" alt="" style=" filter: brightness(0) invert(1); ">
                                 </a>
                             </div>
                         </div>
@@ -34,9 +34,9 @@ header.innerHTML = `
                                             </ul>
 
                                         </li>
-                                        <li class="mx-2"><a href="service.html">Tienda</a></li>
-                                        <li class="mx-2"><a href="service.html">Zona Gamer</a></li>
-                                        <li class="mx-2"><a href="service.html">Noticias</a></li>
+                                        <li class="mx-2"><a href="#">Tienda</a></li>
+                                        <li class="mx-2"><a href="#">Zona Gamer</a></li>
+                                        <li class="mx-2"><a href="#">Noticias</a></li>
 
                                         <li class="mx-2" ><a href="#">Servicios </a>
                                             <ul class="submenu">
@@ -75,8 +75,8 @@ header.innerHTML = `
                                             </ul>
                                         </li>
 
-                                        <li class="mx-2"><a href="#">Nosotros</a></li>
-                                        <li class="mx-2"><a href="#">Contacto</a></li>
+                                        <li class="mx-2"><a href="index.html#nosotros-seccion"  >Nosotros</a></li>
+                                        <li class="mx-2"><a href="index.html#contacto-seccion"  >Contacto</a></li>
                                         <li class="mx-2"><a class="active" href="#"><i class="fa fa-search"></i></a>
                                         
                                             <ul class="submenu inputsearch">
@@ -135,15 +135,31 @@ header.innerHTML = `
 
     footer.innerHTML = `<div class="footer_top">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center d-flex justify-content-between">
             <div class="col-lg-2 col-md-3">
                 <div class="footer_logo wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
                     <a href="index.html">
-                        <img src="./assets/img/logo.png" alt="">
+                        <img src="./assets/img/logo.png" alt="" style=" filter: brightness(0) invert(1); " width="100">
                     </a>
                 </div>
             </div>
-            <div class="col-xl-7 col-lg-7 col-md-9">
+            
+            <div class="col-lg-3 col-md-12">
+                <div class="socail_links">
+                    <ul>
+                        <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" href="https://www.facebook.com/servicelperusac" target="_blank"> <i class="fa fa-facebook"></i> </a></li>
+                        <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" href="https://twitter.com/servicelperusac" target="_blank"> <i class="fa fa-twitter"></i> </a></li>
+                        <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" href="https://www.linkedin.com/company/servicel-peru-sac" target="_blank"> <i class="fa fa-linkedin"></i> </a></li>
+                        <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" href="https://plus.google.com/+Servicelperu" target="_blank"> <i class="fa fa-google-plus"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`;
+
+/*
+<div class="col-xl-7 col-lg-7 col-md-9">
                 <div class="menu_links">
                     <ul>
                         <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s" href="#">About</a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"></li>
@@ -155,16 +171,4 @@ header.innerHTML = `
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-12">
-                <div class="socail_links">
-                    <ul>
-                        <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" href="#"> <i class="fa fa-facebook"></i> </a></li>
-                        <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" href="#"> <i class="fa fa-twitter"></i> </a></li>
-                        <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" href="#"> <i class="fa fa-instagram"></i> </a></li>
-                        <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" href="#"> <i class="fa fa-google-plus"></i> </a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>`;
+*/

@@ -1981,8 +1981,10 @@ h3 {
 
 /* line 6, ../../Arafath/CL/December/233. Startup/HTML/scss/_footer.scss */
 .footer .footer_top {
-  padding-top: 100px;
-  padding-bottom: 160px;
+  /* padding-top: 100px;
+  padding-bottom: 160px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
   background: #1F1F1F;
 }
 
